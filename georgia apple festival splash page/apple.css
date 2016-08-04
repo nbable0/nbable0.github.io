@@ -1,0 +1,51 @@
+.container {
+  width: 960px;
+}
+header{
+    background-image: url('http://static.tumblr.com/5z5aapk/qPBoazyip/apple_photo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: auto;
+    height: 1000px;
+    background-size: cover;
+    display: block;
+    position: center;
+}
+body {
+    color: #FFFFFF;
+    margin: auto;
+    padding: 0;
+    background-color: #ddd;
+    font-family: 'Reem Kufi', sans-serif;
+    background-image: url('http://static.tumblr.com/5z5aapk/R7Toazyk1/wood_back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1000px;
+    margin: auto;
+    height: 3000px;
+    background-size: cover;
+}
+.title {
+    font-family: 'Leckerli One', cursive;
+    padding: 30px;
+    font-size: 75px;
+}
+  header ul{
+    list-style-type: none;
+    padding: 20px;
+    overflow: hidden;
+    float: right;
+    color: white;
+}
+
+header li{
+  font-size: 22px;
+  font-weight: 400;
+  display: inline;
+  padding: 20px;
+}
+
+header li:hover{
+  text-decoration: underline;
+}
