@@ -191,6 +191,8 @@ tablet
 **/
 
 @media (min-width:650px){
+.wrapper .banner #list li { 
+  display:inline !important;}
 
 .box-shadow-menu {
   display: none;
