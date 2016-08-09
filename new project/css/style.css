@@ -78,6 +78,10 @@ font-size: 1.1em;
   height: 300px;
 }
 
+#contact{
+  height: 500px;
+}
+
 #message {
   height: 75px;
   width: 300px;;

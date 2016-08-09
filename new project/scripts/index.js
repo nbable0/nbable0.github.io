@@ -15,7 +15,7 @@ $( "h1" ).animate({
 
 // experiment
 $(window).scroll(function() {
-  if ($(this).scrollTop()> 800) {
+  if ($(this).scrollTop()> 1050) {
     $('nav').fadeIn();
    } else {
     $('nav').fadeOut();
