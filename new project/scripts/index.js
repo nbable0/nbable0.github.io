@@ -12,3 +12,20 @@ $( "h1" ).animate({
 }, 1000, "linear", function() {
 });
 });
+
+// experiment
+$(window).scroll(function() {
+  if ($(this).scrollTop()> 800) {
+    $('nav').fadeIn();
+   } else {
+    $('nav').fadeOut();
+   }
+});
+
+/// Scroll back to top
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
+

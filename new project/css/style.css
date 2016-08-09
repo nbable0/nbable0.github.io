@@ -74,9 +74,41 @@ font-size: 1.1em;
   clear: both;
 }
 
+#work {
+  height: 300px;
+}
+
 #message {
   height: 75px;
   width: 300px;;
+}
+
+/*experiment
+*/
+#scrolltop {
+	background-color: white !important;
+	color:royalblue;
+  text-align: center;
+	border-radius: 2px;
+	border: 0;
+	outline: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+	bottom: 50px;
+	height: 50px;
+	position: fixed;
+	z-index:9999;
+  padding-top: 20px;
+}
+h2 a {
+  text-decoration: none;
+}
+#scrolltop:hover {
+opacity: 1.0;
+}
+.scrolltop {
+ display:none;
 }
 /*********
 tablet
