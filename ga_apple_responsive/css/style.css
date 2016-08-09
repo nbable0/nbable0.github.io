@@ -6,9 +6,19 @@ html {
   font-size: 20px;
 }
 
-#list a {
-  color: white;
-  text-decoration: none;
+body {
+    color: #FFFFFF;
+    margin: auto;
+    padding: 0;
+    background-color: #ddd;
+    font-family: 'Reem Kufi', sans-serif;
+    background-image: url('../images/wood_back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    /*background-image:wood!*/
 }
 
 .container {
@@ -37,20 +47,6 @@ header{
 	  padding: 3%;
 }
 
-body {
-    color: #FFFFFF;
-    margin: auto;
-    padding: 0;
-    background-color: #ddd;
-    font-family: 'Reem Kufi', sans-serif;
-    background-image: url('../images/wood_back.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    margin: auto;
-    background-size: cover;
-    /*background-image:wood!*/
-}
 .title {
     font-family: 'Leckerli One', cursive;
     padding: 20px;
@@ -143,15 +139,18 @@ footer .ellijay {
 	display: none;
 }
 
+#list a {
+  color: white;
+  text-decoration: none;
+}
+
 .box-shadow-menu {
-  margin-right: 10px;
-  animation: all 1s;
-      position: relative;
-    padding-right: 2.25em;
-    animation: all 1s;
-    background-color: #000;
-    float: right;
-    margin-bottom: 25px;
+  animation: display 1s;
+  position: relative;
+  padding-right: 2.25em;
+  top: -30px;
+  background-color: transparent;
+  float: right;
 }
 .box-shadow-menu:before {
   content: "";
@@ -160,14 +159,14 @@ footer .ellijay {
   top: 0.25em;
   width: 3em;
   height: 0.15em;
-  background: white;
+  background-color: white;
   box-shadow: 
     0 0.45em 0 0 white,
     0 0.95em 0 0 white;
 }
 
 .box-shadow-menu:hover{
-	background-color: #ddd;
+	background-color: transparent;
 }
 
 
@@ -190,7 +189,7 @@ footer .ellijay {
 tablet
 **/
 
-@media (min-width:650px){
+@media (min-width:730px){
 .wrapper .banner #list li { 
   display:inline !important;}
 
@@ -198,8 +197,12 @@ tablet
   display: none;
 }
 
+.title {
+  font-size: 3em;
+}
+
 .wrapper .banner #list{
-    padding-right: 0px;
+    padding-right: 0;
     margin-right: 23%;
     color: white;
     display: block;
@@ -217,8 +220,6 @@ footer .ellijay {
     margin-right: 10%;
 
 }
-
-
 }
 
 /*********

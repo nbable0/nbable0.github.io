@@ -1,0 +1,91 @@
+/*********
+mobile first
+*********/
+html {
+  font-size: 20px;
+}
+
+body {
+    color: royalblue;
+    margin: auto;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Reem Kufi', sans-serif;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+}
+
+header {
+  font-size: 1.5em;
+}
+
+h1 {
+  margin-left: 3%;
+  font-size: 3em;
+}
+
+h3 {
+  margin-left: 5%;
+  font-size: 2em;
+}
+
+ul li {
+  list-style: none;
+  float: right;
+  margin-right: 10px;
+}
+
+ul li a {
+   text-decoration: none;
+   color: royalblue;
+}
+
+img {
+  width: 1.25em;
+  margin-bottom: -5px;
+}
+
+form {
+  margin-left: 3%;
+}
+
+form input {
+  height: 30px;
+  width: 200px;
+  margin-left: 5%;
+  border-radius: 3px;
+}
+
+footer {
+  margin: 10%;
+  font-size: .75em;
+}
+
+.info {
+margin-left: 5%;
+font-size: 1.1em;
+}
+
+#about {
+  clear: both;
+}
+
+#message {
+  height: 75px;
+  width: 300px;;
+}
+/*********
+tablet
+**/
+
+
+
+/*********
+desktop
+**/
+
+
+
+
+
