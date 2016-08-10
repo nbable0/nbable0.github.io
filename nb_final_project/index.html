@@ -11,7 +11,7 @@
 <div class="container" >
     <body>
         <header id="top">
-            <h1>nick bable</h1>
+            <h1 class="title">nick bable</h1>
             <ul id="list">
                         <li><a href="#contact">contact</a></li>
                         <li><a href="#work">work</a></li>
@@ -37,17 +37,20 @@
             <h3>work</h3>
             </div>
 
-        <div id="contact">
-            <h3> contact</h3>
-            <form>
-                first name:<br>
-                <input type="text" name="firstname"><br> last name:<br>
-                <input type="text" name="lastname"><br> email:
-                <br>
-                <input type="text" name="emailaddress"><br> message:
-                <br>
-                <input id="message" type="text" name="message"><br>
-            </form>
+            	<section id="contact">
+				<h3>contact</h3>
+				<form action="register.html">
+					<label for="name">name:</label>
+					<input type="text" placeholder="John Doe" id="name" name="name" />
+					<label for="email">email:</label>
+					<input type="email" placeholder="hello@gmail.com" id="email" name="email" />
+					<label for="phone">phone:</label>
+					<input type="tel" placeholder="()555-5555" id="phone" name="phone" />
+					<label for="message">message:</label>
+					<input type="text" placeholder="send me a message" id="message" name="message" />
+					<input type="submit" value="send" />
+				</form>
+			</section>
         </div>
         <footer>
             <div class="me">responsive design by nick bable</div>
