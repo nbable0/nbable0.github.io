@@ -33,7 +33,7 @@ h3 {
 
 ul li {
   list-style: none;
-  float: right;
+  float: left;
   margin-right: 30px;
   position: relative;
 }
@@ -157,9 +157,7 @@ font-size: 1.1em;
 tablet
 **/
 @media(min-width:500px){
-  #list {
-    float: left;
-  }
+
 }
 
 
