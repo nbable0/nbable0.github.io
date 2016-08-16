@@ -31,6 +31,11 @@ h3 {
   font-size: 2em;
 }
 
+h4 {
+  margin-left: 8%;
+  font-size: 1em;
+}
+
 ul li {
   list-style: none;
   float: left;
@@ -62,6 +67,7 @@ section input {
   border: solid 2px royalblue;
   font-size: 20px;
   font-family: 'Reem Kufi', sans-serif;
+  outline: none;
 }
 
 section label {
@@ -78,12 +84,15 @@ section input[type=submit] {
   font-size: 20px;
   height: 50px;
   font-family: 'Reem Kufi', sans-serif;
+  clear: both;
 }
 
 footer {
+  clear: both; 
   margin: 10%;
   font-size: .75em;
 }
+
 
 .info {
 margin-left: 5%;
@@ -98,9 +107,83 @@ font-size: 1.1em;
 
 #work {
   height: 300px;
+  margin-bottom: 300px;
 }
 
+.apple-site {
+  background-image: url('../images/imac_apple.png');
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin: -2%;
+  float: left;
+}
+
+/*** for hover info apple **/
+.dis-text {
+    background-color: white;
+    padding: 20px;
+    display: none;
+    clear: both;
+}
+    
+#ap:hover + .dis-text {
+    display: block;
+    float: left;
+    margin-top: -85px;
+}
+
+.amys {
+  background-image: url('../images/amys_thumb.jpg');
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin-left: 5%;
+  float: left;
+}
+
+.am-text {
+  background-color: white;
+    padding: 20px;
+    display: none;
+    clear: both;
+}
+
+#ap:hover + .am-text {
+    display: block;
+    float: left;
+    margin-top: -105px;
+}
+
+.book-design {
+  background-image: url('../images/book.gif');
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  background-size: 100% 100%;
+  margin: 5%;
+  float: left;
+  margin-bottom: 100px
+}
+
+.bo-text {
+  background-color: white;
+    padding: 20px;
+    display: none;
+    clear: both;
+}
+
+#ap:hover + .bo-text {
+    display: block;
+    float: left;
+    margin-top: -105px;
+}
+
+
 #contact{
+  clear: both;  
   margin-bottom: 100px;
   height: 500px;
 }
@@ -109,7 +192,12 @@ font-size: 1.1em;
   height: 75px;
   width: 250px;;
 }
-/* animate*/
+
+#fade-in {
+  display: none;
+}
+
+/*animate beginning*/
 .container{
   -webkit-animation: animationFrames ease 2s;
   -webkit-animation-iteration-count: 1;
@@ -153,19 +241,264 @@ font-size: 1.1em;
   }
 }
 
+/*Parsley for form validation*/
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+li.parsley-required {
+  color: red;
+  float: right;
+}
+/***** style for apple page ********/
+
+ #menu {
+   margin-right: 20px;
+ }
+
+
+.wrapper #list_a li{
+	clear: both;
+	display: none;
+}
+
+#list_a a {
+  color: white;
+  float:right;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.box-shadow-menu {
+  animation: display 1s;
+  position: relative;
+  padding-right: 2.25em;
+  top: -30px;
+  background-color: transparent;
+  float: right;
+  margin-right: 55px;
+  margin-bottom: 20px;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 2em;
+  height: 0.15em;
+  background-color: white;
+  box-shadow: 
+    0 0.45em 0 0 white,
+    0 0.95em 0 0 white;
+}
+
+.box-shadow-menu:hover{
+	background-color: transparent;
+}
+
+h3 {
+  clear: both;
+}
+
+.apple-body {
+    color: #FFFFFF;
+    margin: auto;
+    padding: 0;
+    background-color: #ddd;
+    font-family: 'Reem Kufi', sans-serif;
+    background-image: url('../images/wood_back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    /*background-image:wood!*/
+}
+.apple-intro {
+  background-color: #ce3333;
+  padding: 50px;
+  font-size: 1.5em;
+}
+
+.apple-project h2 {
+  clear: both;
+  margin-left: 3%;
+}
+
+.apple-mock {
+  background-image: url('../images/apple_photo.jpg');
+  background-repeat: no-repeat;
+  background: cover;
+  width: 450px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin: auto;
+  float: left;
+}
+
+.apple-desc {
+  margin-top: 100px;
+  padding: 25px;
+  font-size: 1.5em;
+}
+
+.apple-web {
+  background-image: url('../images/imac_apple.png');
+  background-color: white;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 350px;
+  background-size: 100% 100%;
+  margin-left: -5%;
+  float: left;
+}
+
+.mobile-back {
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  padding-bottom: 200px;
+}
+
+.apple-mobile {
+  display: initial;
+  background-image: url('../images/mobile_apple.png');
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin-left: 32%;
+  float: left;
+}
+
+.apple-logo {
+  display: initial;
+  background-image: url('../images/apple_logo_static.png');
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  background-size: 100% 100%;
+  margin: 20% 30%;
+  float: left;
+}
+
+
+.link {
+  clear: both;
+  margin: 10%;
+  float:left;
+}
+.other_projects {
+  margin: 5%;
+  clear: both;
+}
+
 /*********
 tablet
 **/
-@media(min-width:500px){
+@media(min-width:675px){
+/*index*/
+#list {
+  float: right;
+  margin-right: 10%;
+}
 
+#ap:hover + .am-text {
+    margin-top: -145px;
+    margin-left: 500px;
+}
+
+#ap:hover + .bo-text {
+    display: block;
+    float: left;
+    margin-top: -105px;
+    margin-left: 650px;
+}
+
+/* contact section*/
+
+section input {
+  height: 60px;
+  width: 400px;
+  margin: 15px;
+  border-radius: 3px;
+  font-size: 2em;
+}
+
+section label {
+  font-size: 2em;
+}
+
+section input[type=submit] {
+  margin: 20px;
+  font-size: 2em;
+  height: 100px;
+  
+}
+
+#contact{
+ padding: 50px;
+}
+
+#message {
+  height: 150px;
+  width: 500px;;
+}
+
+/*for apple page*/
+
+#list_a a {
+  margin-left: 650px;
+}
+
+.apple-mobile {
+  display: initial;
+  background-image: url('../images/mobile_apple.png');
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin: 3%;
+  float: left;
+}
 }
 
 
 /*********
 desktop
 **/
+@media(min-width:960px){
 
+#ap:hover + .bo-text {
+    display: block;
+    float: left;
+    margin-top: -105px;
+    margin-left: 850px;
+}
 
+#contact{
+ padding: 200px;
+}
 
+/*for apple page*/
+
+#list_a a {
+  margin-left: 800px;
+}
+
+}
 
 
