@@ -68,6 +68,7 @@ section input {
   font-size: 20px;
   font-family: 'Reem Kufi', sans-serif;
   outline: none;
+  text-align: center;
 }
 
 section label {
@@ -198,6 +199,33 @@ font-size: 1.1em;
     right: 7px;
 }
 
+.utah-sky {
+  background-image: url('../images/utah_sky.jpg');
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  width: 325px;
+  height: 260px;
+  background-size: 100% 100%;
+  margin: 3%;
+  float: left;
+  margin-bottom: 100px
+}
+
+.ut-text {
+    padding: 5px;
+    display: none;
+    clear: both;
+}
+
+#ut:hover + .ut-text {
+   padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 1925px;
+}
 
 #contact{
   clear: both;  
@@ -370,6 +398,7 @@ textarea.parsley-error {
 }
 
 li.parsley-required {
+  list-style: none;
   color: red;
   float: right;
 }
@@ -590,6 +619,16 @@ tablet
 .book-design {
   width: 425px;
   height: 360px;
+}
+
+.utah-sky {
+ width: 425px;
+  height: 360px;
+  margin-top: -460px;
+}
+
+#ut:hover + .ut-text {
+    top: 1525px;
 }
 
 /* contact section*/
