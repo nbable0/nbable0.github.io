@@ -16,8 +16,8 @@ $(document).on('scroll', showContact);
 /*for scroll animation*/
 
 function showScroll(event){
-    if ($(window).scrollTop() >= 500){
-        $('#fade-in').fadeIn(2000);
+    if ($(window).scrollTop() >= 450){
+        $('#fade-in').fadeIn(2500);
     }else{
         $('#fade-in').fadeOut(1000);
     }
