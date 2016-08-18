@@ -933,7 +933,8 @@ h2 {
 }
 
 #ap:hover + .am-text {
-    top: 1550px;
+    top: 1050px;
+    left: 550px;
 }
 
 .book-design {
@@ -944,6 +945,7 @@ h2 {
 #ap:hover + .bo-text {
   top: 1550px;
   left:575px;
+  right: 60px;
 }
 
 .apple-site {
