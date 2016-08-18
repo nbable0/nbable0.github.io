@@ -150,7 +150,7 @@ font-size: 1.1em;
     display: block;
     float: left;
     position: absolute;
-    top: 1050px;
+    top: 950px;
 }
 
 .amys {
@@ -177,7 +177,7 @@ font-size: 1.1em;
     display: block;
     float: left;
     position: absolute;
-    top: 1350px;
+    top: 1250px;
 }
  
 .book-design {
@@ -205,8 +205,8 @@ font-size: 1.1em;
     display: block;
     float: left;
     position: absolute;
-    top: 1625px;
-    right: 7px;
+    top: 1475px;
+    right: 200px;
 }
 
 .utah-sky {
@@ -234,7 +234,8 @@ font-size: 1.1em;
     display: block;
     float: left;
     position: absolute;
-    top: 1925px;
+    top: 1825px;
+
 }
 
 #contact{
@@ -681,6 +682,10 @@ font-size: 1.5em;
   height: 400px;
 }
 
+#ap:hover + .dis-text {
+    top: 1050px;
+}
+
 .amys {
   width: 425px;
   height: 300px;
@@ -699,6 +704,7 @@ font-size: 1.5em;
 
 #ut:hover + .ut-text {
     top: 2225px;
+    left: 50px;
 }
 
 /* contact section*/
