@@ -1,3 +1,13 @@
+/*
+box model hack
+*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
 /*********
 mobile first
 *********/
@@ -406,6 +416,22 @@ li.parsley-required {
 #services {
   display: none;
 }
+/* contact page*/
+
+#top-contact {
+  margin-bottom: 200px;
+}
+
+#hi {
+  margin-bottom: 150px;
+}
+
+#contact-page{
+  clear: both;  
+  margin-bottom: 100px;
+  padding: 150px;
+  height: 500px;
+}
 
 /***** style for apple page ********/
 
@@ -624,11 +650,11 @@ tablet
 .utah-sky {
  width: 425px;
   height: 360px;
-  margin-top: -368px;
+  margin-top: 25px;
 }
 
 #ut:hover + .ut-text {
-    top: 1525px;
+    top: 2225px;
 }
 
 /* contact section*/
@@ -694,7 +720,7 @@ section input[type=submit] {
     overflow: hidden;
     display: block;
     margin-left: 9%;
-    width: 100%;
+    width: 600px;
     background-size: 90% 90%;
     height: 300px;
 	  padding: 3%;
@@ -722,11 +748,15 @@ section input[type=submit] {
 
 }
 
+/***** tab ***/
 
 /*********
 desktop
 **/
 @media(min-width:860px){
+#contact {
+  display: none;
+}
 
 #ap:hover + .am-text {
     top: 1050px;
@@ -769,10 +799,6 @@ h2 {
 }
 
 .apple-mock {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-    display: block;
     margin-left: 9%;
     width: 100%;
     background-size: 90% 100%;
@@ -802,4 +828,70 @@ h2 {
 
 }
 
+@media(min-width:800px){
+.utah-sky {
+   width: 525px;
+  height: 460px;
+  margin-top: 25px;
+}
 
+#ut:hover + .ut-text {
+    top: 2525px;
+}
+
+.amys {
+    width: 525px;
+  height: 400px;
+}
+
+.book-design {
+  width: 525px;
+  height: 460px;
+}
+#ap:hover + .bo-text {
+  top: 2050px;
+  left: 10px;
+}
+.apple-site {
+  margin: 1%;
+  width: 650px;
+  height: 500px;
+}
+}
+
+
+@media(min-width:1046px){
+
+
+.utah-sky {
+   width: 425px;
+  height: 360px;
+  margin-top: -367px;
+}
+
+#ut:hover + .ut-text {
+    top: 1525px;
+}
+
+.amys {
+    width: 425px;
+  height: 300px;
+}
+
+.book-design {
+  width: 425px;
+  height: 360px;
+}
+
+#ap:hover + .bo-text {
+  top: 1550px;
+  left:575px;
+}
+
+.apple-site {
+  margin: 1%;
+  width: 500px;
+  height: 400px;
+}
+
+}
