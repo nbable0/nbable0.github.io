@@ -389,6 +389,44 @@ font-size: 1.1em;
   }
 }
 
+/** scroll animation***/
+#scroll {
+  position: fixed;
+  top: 550px;
+  right: 100px;
+  font-size: 1.5em;
+  animation: animationScroll ease 2s;
+  animation-iteration-count: 3;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationScroll ease 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+}
+
+@keyframes animationScroll{
+  0% {
+    opacity:0;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationScroll {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
 
 
 /*Parsley for form validation*/
@@ -594,13 +632,18 @@ tablet
 @media(min-width:575px){
 /*index*/
 
+.info {
+margin-left: 5%;
+font-size: 1.5em;
+}
+
 #about {
   margin-bottom: 0;
 }
 
 #service-sec {
   display: block;
-  margin: 10px;
+  margin: 15px;
 }
 
 #services {
@@ -610,6 +653,7 @@ tablet
   position: relative;
   padding: 5px;
   margin-left: 4%;
+  margin-top: 80px;
 }
 
 #services li a:hover {
@@ -628,7 +672,7 @@ tablet
 
 #ap:hover + .bo-text {
   top: 1850px;
-  right: 255px;
+  right: 350px;
 }
 
 .apple-site {
@@ -754,6 +798,11 @@ section input[type=submit] {
 desktop
 **/
 @media(min-width:860px){
+
+.info {
+font-size: 2em;
+}
+
 #contact {
   display: none;
 }
@@ -844,13 +893,18 @@ h2 {
   height: 400px;
 }
 
+#ap:hover + .am-text {
+    top: 1650px;
+    left: 10px;
+}
+
 .book-design {
   width: 525px;
   height: 460px;
 }
 #ap:hover + .bo-text {
-  top: 2050px;
-  left: 10px;
+  top: 2150px;
+  right: 550px;
 }
 .apple-site {
   margin: 1%;
@@ -876,6 +930,10 @@ h2 {
 .amys {
     width: 425px;
   height: 300px;
+}
+
+#ap:hover + .am-text {
+    top: 1550px;
 }
 
 .book-design {
