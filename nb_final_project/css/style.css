@@ -169,7 +169,7 @@ font-size: 1.1em;
     position: absolute;
     top: 1350px;
 }
-
+ 
 .book-design {
   background-image: url('../images/front_reto.jpg');
   border-radius: 5px;
@@ -624,7 +624,7 @@ tablet
 .utah-sky {
  width: 425px;
   height: 360px;
-  margin-top: -460px;
+  margin-top: -368px;
 }
 
 #ut:hover + .ut-text {
