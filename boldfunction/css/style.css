@@ -1,0 +1,963 @@
+/*
+box model hack
+*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+/*********
+mobile first
+*********/
+html {
+  font-size: 20px;
+}
+
+body {
+    color: royalblue;
+    margin: auto;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Reem Kufi', sans-serif;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+}
+
+header {
+  font-size: 1.5em;
+}
+
+h1 {
+  margin-left: 3%;
+  font-size: 3em;
+  float: center;
+}
+
+h3 {
+  margin-left: 5%;
+  font-size: 2em;
+}
+
+h4 {
+  margin-left: 8%;
+  font-size: 1em;
+}
+
+#list li {
+  list-style: none;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+}
+
+ul li a {
+   text-decoration: none;
+   color: royalblue;
+}
+
+img {
+  width: 1.25em;
+  margin-bottom: -5px;
+
+}
+
+section {
+  margin-left: 3%;
+}
+
+section input {
+  height: 30px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 3px;
+  float: right;
+  border: solid 2px royalblue;
+  font-size: 20px;
+  font-family: 'Reem Kufi', sans-serif;
+  outline: none;
+  text-align: center;
+}
+
+section label {
+  float: left;
+  clear: both;
+}
+
+section input[type=submit] {
+  float: right;
+  margin: 20px;
+  background: white;
+  border: solid 2px royalblue;
+  color: royalblue;
+  font-size: 20px;
+  height: 50px;
+  font-family: 'Reem Kufi', sans-serif;
+  clear: both;
+}
+
+footer {
+  clear: both; 
+  margin: 10%;
+  font-size: .75em;
+}
+
+
+.info {
+margin-left: 5%;
+font-size: 1.1em;
+}
+
+
+#about {
+  clear: both;
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+#work {
+  height: 300px;
+  margin-bottom: 300px;
+}
+
+#portfolio-thumb {
+  list-style: none;
+  display: block;
+}
+
+.apple-site {
+  background-image: url('../images/imac_apple.png');
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin: -5%;
+  float: left;
+}
+
+/*** for hover info apple **/
+.dis-text {
+    display: none;
+    clear: both;
+}
+    
+#ap:hover + .dis-text {
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 950px;
+}
+
+.amys {
+  background-image: url('../images/amys_front.jpg');
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  width: 325px;
+  height: 225px;
+  background-size: 100% 100%;
+  margin: 3%;
+  float: left;
+}
+
+.am-text {
+    padding: 5px;
+    display: none;
+    clear: both;
+}
+
+#ap:hover + .am-text {
+     padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 1250px;
+}
+ 
+.book-design {
+  background-image: url('../images/front_reto.jpg');
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  width: 325px;
+  height: 260px;
+  background-size: 100% 100%;
+  margin: 3%;
+  float: left;
+  margin-bottom: 10px
+}
+
+.bo-text {
+    padding: 5px;
+    display: none;
+    clear: both;
+}
+
+#ap:hover + .bo-text {
+   padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 1475px;
+    right: 200px;
+}
+
+.utah-sky {
+  background-image: url('../images/utah_sky.jpg');
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  width: 325px;
+  height: 260px;
+  background-size: 100% 100%;
+  margin: 3%;
+  float: left;
+  margin-bottom: 100px
+}
+
+.ut-text {
+    padding: 5px;
+    display: none;
+    clear: both;
+}
+
+#ut:hover + .ut-text {
+   padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 1825px;
+
+}
+
+#contact{
+  clear: both;  
+  margin-bottom: 100px;
+  height: 500px;
+}
+
+#message {
+  height: 75px;
+  width: 250px;;
+}
+
+#fade-in {
+  display: none;
+}
+
+#fade-contact {
+  display: none;
+}
+
+/*animation for main sections*/
+#list li:hover{
+  animation: animationFrames3 linear 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 0%;
+  -webkit-animation: animationFrames3 linear 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 0%;
+}
+
+@keyframes animationFrames3{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  20% {
+    transform:  rotate(15deg) ;
+  }
+  40% {
+    transform:  rotate(-10deg) ;
+  }
+  60% {
+    transform:  rotate(5deg) ;
+  }
+  80% {
+    transform:  rotate(-5deg) ;
+  }
+  100% {
+    transform:  rotate(0deg) ;
+  }
+}
+
+@-webkit-keyframes animationFrames3 {
+  0% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+  20% {
+    -webkit-transform:  rotate(15deg) ;
+  }
+  40% {
+    -webkit-transform:  rotate(-10deg) ;
+  }
+  60% {
+    -webkit-transform:  rotate(5deg) ;
+  }
+  80% {
+    -webkit-transform:  rotate(-5deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+}
+
+
+
+/*animation for project titles*/
+.project-title{
+  animation: animationFrames2 ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationFrames2 ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+}
+
+@keyframes animationFrames2{
+  0% {
+    opacity:0;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationFrames2 {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+
+/*animate beginning*/
+.container{
+  -webkit-animation: animationFrames ease 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+#list li{
+  -webkit-animation: animationFrames ease-in 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(-1500px,0px)  ;
+  }
+  60% {
+    opacity:1;
+    -webkit-transform:  translate(30px,0px)  ;
+  }
+  80% {
+    -webkit-transform:  translate(-10px,0px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+/** scroll animation***/
+#scroll {
+  position: fixed;
+  top: 550px;
+  right: 100px;
+  font-size: 1.5em;
+  animation: animationScroll ease 2s;
+  animation-iteration-count: 3;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationScroll ease 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+}
+
+@keyframes animationScroll{
+  0% {
+    opacity:0;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes animationScroll {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+
+
+/*Parsley for form validation*/
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+li.parsley-required {
+  list-style: none;
+  color: red;
+  float: right;
+}
+
+#services {
+  display: none;
+}
+/* contact page*/
+
+#top-contact {
+  margin-bottom: 200px;
+}
+
+#hi {
+  margin-bottom: 150px;
+}
+
+#contact-page{
+  clear: both;  
+  margin-bottom: 100px;
+  padding: 150px;
+  height: 500px;
+}
+
+/***** style for apple page ********/
+
+ #menu {
+   margin-right: 20px;
+ }
+
+
+.wrapper #list_a li{
+	clear: both;
+	display: none;
+  list-style: none;
+  margin-right: 3%;
+}
+
+#list_a a {
+  color: white;
+  float:right;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.box-shadow-menu {
+  animation: display 1s;
+  position: relative;
+  padding-right: 2.25em;
+  top: -30px;
+  background-color: transparent;
+  float: right;
+  margin-right: 55px;
+  margin-bottom: 20px;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 2em;
+  height: 0.15em;
+  background-color: white;
+  box-shadow: 
+    0 0.45em 0 0 white,
+    0 0.95em 0 0 white;
+}
+
+.box-shadow-menu:hover{
+	background-color: transparent;
+}
+
+h3 {
+  clear: both;
+}
+
+.apple-body {
+    color: #FFFFFF;
+    margin: auto;
+    padding: 0;
+    background-color: #ddd;
+    font-family: 'Reem Kufi', sans-serif;
+    background-image: url('../images/wood_back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    /*background-image:wood!*/
+}
+.apple-intro {
+  background-color: #ce3333;
+  padding: 50px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.apple-project h2 {
+  clear: both;
+  margin-left: 3%;
+}
+
+.apple-mock {
+  background-image: url('../images/apple_photo.jpg');
+  background-repeat: no-repeat;
+  background: cover;
+  width: 450px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin: auto;
+  float: left;
+}
+
+.apple-desc {
+  margin-top: 5px;
+  padding: 25px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.apple-web {
+  background-image: url('../images/imac_apple.png');
+  background-color: white;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 350px;
+  background-size: 100% 100%;
+  background: cover;
+  margin-left: -5%;
+  float: left;
+}
+
+.mobile-back {
+  background-color: white;
+  height: 500px;
+  padding-bottom: 200px;
+}
+
+.apple-mobile {
+  display: initial;
+  background-image: url('../images/mobile_apple.png');
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin-left: 32%;
+  float: left;
+}
+
+.group {
+  clear: both;
+  background-color: white;
+  
+}
+
+.apple-logo {
+  display: initial;
+  background-image: url('../images/apple_logo_static.png');
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  background-size: 100% 100%;
+  margin: 20% 30%;
+  float: left;
+}
+
+
+.link {
+  clear: both;
+  margin: 10%;
+  float:left;
+}
+.other_projects {
+  margin: 5%;
+  clear: both;
+}
+
+/*********
+tablet
+**/
+@media(min-width:575px){
+/*index*/
+
+.info {
+margin-left: 5%;
+font-size: 1.5em;
+}
+
+#about {
+  margin-bottom: 0;
+}
+
+#service-sec {
+  display: block;
+  margin: 15px;
+}
+
+#services {
+  display: block;
+  float: left;
+  list-style: none;
+  position: relative;
+  padding: 5px;
+  margin-left: 4%;
+  margin-top: 80px;
+}
+
+#services li a:hover {
+  background: yellow;
+  padding: 5px;
+}
+
+#list {
+  float: right;
+  margin-right: 10%;
+}
+
+#ap:hover + .am-text {
+    top: 1550px;
+}
+
+#ap:hover + .bo-text {
+  top: 1850px;
+  right: 350px;
+}
+
+.apple-site {
+  margin: 1%;
+  width: 500px;
+  height: 400px;
+}
+
+#ap:hover + .dis-text {
+    top: 1050px;
+}
+
+.amys {
+  width: 425px;
+  height: 300px;
+}
+
+.book-design {
+  width: 425px;
+  height: 360px;
+}
+
+.utah-sky {
+ width: 425px;
+  height: 360px;
+  margin-top: 25px;
+}
+
+#ut:hover + .ut-text {
+    top: 2225px;
+    left: 50px;
+}
+
+/* contact section*/
+
+section input {
+  height: 60px;
+  width: 400px;
+  margin: 15px;
+  border-radius: 3px;
+  font-size: 2em;
+}
+
+section label {
+  font-size: 2em;
+}
+
+section input[type=submit] {
+  margin: 20px;
+  font-size: 2em;
+  height: 100px;
+  
+}
+
+#contact{
+ padding: 50px;
+}
+
+#message {
+  height: 150px;
+  width: 500px;;
+}
+
+/*for apple page*/
+
+#list_a a {
+  margin-left: 650px;
+}
+
+.apple-mobile {
+  margin: 0;
+  float: left;
+}
+
+.link {
+  font-size: 2em;
+}
+
+.apple-intro {
+  height: 400px;
+  font-size: 3em;
+}
+
+.apple-desc {
+  height: 200px;
+  padding: 5px;
+  font-size: 2em;
+  
+}
+
+.apple-mock {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: block;
+    margin-left: 9%;
+    width: 600px;
+    background-size: 90% 90%;
+    height: 300px;
+	  padding: 3%;
+}
+
+.mobile-back {
+  background-color: transparent;
+}
+
+.group {
+  display: block;
+  padding: 150px;
+  height: 900px;
+}
+
+.apple-logo {
+  background-color: transparent;
+  margin-left: 50%;
+  margin-top: -300px;
+}
+
+.apple-web {
+  background-color: transparent;
+}
+
+}
+
+/***** tab ***/
+
+/*********
+desktop
+**/
+@media(min-width:860px){
+
+.info {
+font-size: 2em;
+}
+
+#contact {
+  display: none;
+}
+
+#ap:hover + .am-text {
+    top: 1050px;
+    left: 500px;
+}
+
+#ap:hover + .bo-text {
+  top: 1450px;
+}
+
+#contact{
+ padding: 200px;
+}
+
+/*for apple page*/
+
+h2 {
+  font-size: 2em;
+}
+
+#list_a a {
+  margin-left: 800px;
+}
+
+.apple-intro {
+  font-size: 4em;
+  height: 500px;
+  text-align: center;
+  padding: 50px;
+   background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: block;
+}
+
+.apple-desc {
+  height: 225px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.apple-mock {
+    margin-left: 9%;
+    width: 100%;
+    background-size: 90% 100%;
+    height: 700px;
+	  padding: 3%;
+}
+
+.apple-web {
+
+  width: 450px;
+  height: 350px;
+  background-size: 100% 100%;
+  margin-left: -5%;
+}
+
+.apple-mobile {
+  width: 150px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin-left: 75%;
+  margin-top: -350px;
+}
+
+.apple-logo {
+  margin-left: 40%;
+}
+
+}
+
+@media(min-width:800px){
+.utah-sky {
+   width: 525px;
+  height: 460px;
+  margin-top: 25px;
+}
+
+#ut:hover + .ut-text {
+    top: 2525px;
+}
+
+.amys {
+    width: 525px;
+  height: 400px;
+}
+
+#ap:hover + .am-text {
+    top: 1650px;
+    left: 10px;
+}
+
+.book-design {
+  width: 525px;
+  height: 460px;
+}
+#ap:hover + .bo-text {
+  top: 2150px;
+  right: 550px;
+}
+.apple-site {
+  margin: 1%;
+  width: 650px;
+  height: 500px;
+}
+}
+
+
+@media(min-width:1046px){
+
+
+.utah-sky {
+   width: 425px;
+  height: 360px;
+  margin-top: -367px;
+}
+
+#ut:hover + .ut-text {
+    top: 1525px;
+}
+
+.amys {
+    width: 425px;
+  height: 300px;
+}
+
+#ap:hover + .am-text {
+    top: 1050px;
+    left: 550px;
+}
+
+.book-design {
+  width: 425px;
+  height: 360px;
+}
+
+#ap:hover + .bo-text {
+  top: 1550px;
+  left:575px;
+  right: 60px;
+}
+
+.apple-site {
+  margin: 1%;
+  width: 500px;
+  height: 400px;
+}
+
+}

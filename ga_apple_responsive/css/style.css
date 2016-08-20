@@ -155,8 +155,8 @@ footer .ellijay {
 .box-shadow-menu:before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0.25em;
+  right: 1em;
+  bottom: 16em;
   width: 3em;
   height: 0.15em;
   background-color: white;
@@ -165,8 +165,8 @@ footer .ellijay {
     0 0.95em 0 0 white;
 }
 
-.box-shadow-menu:hover{
-	background-color: transparent;
+.box-shadow-menu:hover .wrapper #list li{
+  display: block;
 }
 
 
@@ -184,12 +184,19 @@ footer .ellijay {
   height: 150px;
   width: 300px;
 }
+/**box shadow**/
+@media (min-width:425px){
+.box-shadow-menu:before {
+  bottom: 12em;
+}
+}
+
 
 /*********
 tablet
 **/
 
-@media (min-width:730px){
+@media (min-width:661px){
 .wrapper .banner #list li { 
   display:inline !important;}
 
