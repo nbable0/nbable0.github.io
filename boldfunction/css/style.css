@@ -543,7 +543,113 @@ h3 {
   margin: 5%;
   clear: both;
 }
+@media(min-width:375px){
 
+#work {
+  margin-left: 4%;
+}
+
+#about {
+  font-size: 1.5em;
+}
+
+#services {
+  font-size: 2em;
+}
+
+.dropbtn{
+  border: none;
+  background: white;
+  background-image: url('../images/menu.png');
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  background-size: 100% 100%;
+  float: right;
+  margin-right: -855px;
+  margin-top: -80px;
+}
+
+#list {
+    position: absolute;
+    left: 650px;
+    top: -60px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+.apple-site {
+  width: 800px;
+  height: 800px;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  background-size: 100% 100%;
+}
+
+.apple-site:hover {
+  color: royalblue;
+  text-align: center;
+  background: white;
+  border: 3px solid red;
+  padding: 45px;
+  position: relative;
+  font-size: 2em;
+}
+
+.amys {
+    width: 800px;
+  height: 800px;
+  background-size: 100% 100%;
+}
+
+.amys:hover {
+  color: royalblue;
+  text-align: center;
+  background: white;
+  border: 3px solid red;
+  padding: 78px;
+  position: relative;
+  font-size: 2em;
+}
+ 
+.book-design {
+  width: 800px;
+  height: 800px;
+  background-size: 100% 100%;
+}
+
+.book-design:hover {
+  color: royalblue;
+  text-align: center;
+  background: white;
+  border: 3px solid red;
+  padding: 45px;
+  position: relative;
+  font-size: 2em;
+}
+
+.utah-sky {
+   width: 800px;
+  height: 800px;
+  background-size: 100% 100%;
+}
+
+.utah-sky:hover {
+  color: royalblue;
+  text-align: center;
+  background: white;
+  border: 3px solid red;
+  padding: 65px;
+  position: relative;
+  font-size: 2em;
+}
+
+
+
+}
 /*********
 tablet
 **/
