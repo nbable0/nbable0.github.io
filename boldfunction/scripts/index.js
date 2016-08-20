@@ -25,7 +25,7 @@ function showScroll(event){
 }
 
 function showContact(event){
-    if ($(window).scrollTop() >= 1300){
+    if ($(window).scrollTop() >= 1000){
         $('#fade-contact').fadeIn(2500);
     }else{
         $('#fade-contact').fadeOut(1000);
