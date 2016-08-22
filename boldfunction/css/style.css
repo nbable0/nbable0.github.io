@@ -1,11 +1,32 @@
-/*
-box model hack
-*/
+/* Box Model Hack */
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
 
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
 /*********
@@ -111,16 +132,16 @@ mobile first
 
 html {
   font-size: 18px;
+  margin: 0;
 }
 
 body {
     color: royalblue;
-    margin: auto;
+    margin: 0;
     padding: 0;
     background-color: #fff;
     font-family: 'helvetica', sans-serif;
     width: 100%;
-    margin: auto;
     background-size: cover;
 }
 
@@ -223,11 +244,11 @@ ul li a {
    color: royalblue;
 }
 
-img {
+/*img {
   width: 1.25em;
   margin-bottom: -5px;
 
-}
+}*/
 
 section {
   margin-left: 3%;
@@ -393,7 +414,6 @@ margin-top: -100px;
   background-size: contain;
   margin: 3%;
   float: left;
-  margin-bottom: 100px;
   color: transparent;
 }
 
@@ -404,6 +424,28 @@ margin-top: -100px;
   text-align: center;
   background: white;
   border: 3px solid red;
+  position: relative;
+  font-size: 2em;
+}
+
+.ghost{
+  background-image: url('../images/ghost.gif');
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  background-size: contain;
+  margin: 3%;
+  float: left;
+  color: transparent;
+}
+
+.ghost:hover{
+  color: royalblue;
+  text-align: center;
+  background: white;
+  border: 3px solid red;
+  padding-top: 20px;
   position: relative;
   font-size: 2em;
 }
@@ -425,7 +467,10 @@ margin-top: -100px;
 #fade-contact {
   display: none;
 }
-
+.full-resume {
+  width: 100%;
+  height: auto;
+}
 
 /*animation for project titles*/
 .project-title:hover{
@@ -712,7 +757,7 @@ h3 {
   padding: 50px;
   font-size: 1.5em;
   text-align: center;
-  width: 105%;
+  width: 110%;
   background-size: contain;
 }
 
@@ -721,7 +766,7 @@ h3 {
   padding: 50px;
   font-size: 1.5em;
   text-align: center;
-  width: 105%;
+  width: 110%;
   background-size: contain;
 }
 
@@ -734,7 +779,7 @@ h3 {
   background-image: url('../images/amys/amys-ill.jpg');
   background-repeat: no-repeat;
   background: cover;
-  width: 105%;
+  width: 110%;
   height: 400px;
   background-size: contain;
   margin: auto;
@@ -747,7 +792,7 @@ h3 {
   padding: 25px;
   font-size: 1.5em;
   text-align: center;
-  width: 105%;
+  width: 110%;
   background-size: contain;
 }
 
@@ -768,10 +813,9 @@ h3 {
 .amys-package {
   background-image: url('../images/amys/full_back.jpg');
   background-repeat: no-repeat;
-  width: 101%;
+  width: 100%;
   height: 250px;
-  background-size: contain;
-  background: cover;
+  background-size:100%, contain;
   margin-left: -5%;
   float: left;
   margin: 0;
@@ -785,7 +829,7 @@ h3 {
   background-image: url('../images/amys/mic.jpg');
   background-repeat: no-repeat;
   background-color: white;
-  width: 101%;
+  width: 110%;
   height: 620px;
   background-size: contain;
   background: cover;
@@ -797,12 +841,55 @@ h3 {
 .amys-hold {
   background-image: url('../images/amys/hold.jpg');
   background-repeat: no-repeat;
-  width: 101%;
-  height: 269px;
+  width: 110%;
+  height: 294px;
   background-size: contain;
   background-color: white;
   float: left;
 }
+
+/***** style for abook page******/
+
+
+.book-front {
+  background-image: url('../images/amys/amys-ill.jpg');
+  background-repeat: no-repeat;
+  background: cover;
+  width: 110%;
+  height: 400px;
+  background-size: contain;
+  margin: auto;
+  float: left;
+  background-color: white;
+}
+
+
+.book-front:hover {
+  background-image: url('../images/amys/amys_dis_back.jpg');
+}
+
+.book-full {
+  background-image: url('../images/amys/full_back.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  background-size:100%, contain;
+  margin-left: -5%;
+  float: left;
+  margin: 0;
+}
+
+.amys-package:hover {
+  background-image: url('../images/amys/full_front.jpg');
+}
+
+.book-ad {
+
+  max-width: 100%;
+  height: auto;
+
+}
+
 
 
 /*********
@@ -1001,6 +1088,15 @@ tablet
   padding-top: 20px;
 }
 
+.ghost{
+  width: 400px;
+  height: 400px;
+}
+
+.ghost:hover{
+  font-size: 2em;
+}
+
 .info {
 margin-left: 5%;
 font-size: 1.5em;
@@ -1115,7 +1211,6 @@ section input[type=submit] {
 
 .amys-intro {
   background-color: #fcd382;
-  width: 105%;
   font-size: 2em;
 }
 
@@ -1125,17 +1220,14 @@ section input[type=submit] {
 }
 
 .amys-mock {
-  width: 105%;
   height: 550px;
 }
 
 .amys-desc {
   font-size: 2em;
-  width: 105%;
 }
 
 .amys-pack {
-  width: 110%;
   height: 620px;
 }
 
@@ -1144,12 +1236,10 @@ section input[type=submit] {
 }
 
 .amys-mic {
-  width: 110%;
   height: 900px;
 }
 
 .amys-hold {
-  width: 110%;
   height: 445px;
 }
 /*end media 575*/
@@ -1298,6 +1388,15 @@ desktop
   padding-top: 20px;
 }
 
+.ghost{
+  width: 350px;
+  height: 350px;
+}
+
+.ghost:hover{
+  font-size: 2em;
+}
+
 /*for apple page*/
 
 h2 {
@@ -1358,7 +1457,6 @@ h2 {
 
 .amys-intro {
   background-color: #fcd382;
-  width: 105%;
   font-size: 3em;
 }
 
@@ -1368,7 +1466,6 @@ h2 {
 }
 
 .amys-mock {
-  width: 105%;
   height: 700px;
   padding: 10%;
 }
@@ -1379,9 +1476,6 @@ h2 {
 }
 
 .amys-pack {
-  background-image: url('../images/amys/amys_front.jpg');
-  background-repeat: no-repeat;
-  width: 110%;
   height: 700px;
   background-size: contain;
   background: cover;;
@@ -1397,12 +1491,10 @@ h2 {
 }
 
 .amys-mic {
-  width: 110%;
   height: 700px;
 }
 
 .amys-hold {
-  width: 100%;
   height: 650px;
 }
 
@@ -1471,31 +1563,25 @@ h2 {
 
 .amys-intro {
   background-color: #fcd382;
-  width: 105%;
   font-size: 3em;
   clear: both;
 }
 
 .amys-intro1 {
   padding: 50px;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .amys-mock {
-  width: 105%;
   height: 700px;
   padding: 10%;
 }
 
 .amys-desc {
-  font-size: 3.5em;
-  width: 105%;
+  font-size: 3em;
 }
 
 .amys-pack {
-  background-image: url('../images/amys/amys_front.jpg');
-  background-repeat: no-repeat;
-  width: 110%;
   height: 975px;
   background-size: contain;
   background: cover;;
@@ -1516,7 +1602,6 @@ h2 {
 }
 
 .amys-hold {
-     width: 100%;
     height: 675px;
     margin-left: 457px;
     position: absolute;
@@ -1596,6 +1681,15 @@ h2 {
   height: 500px;
   font-size: 3em;
   padding-top: 20px;
+}
+
+.ghost{
+  width: 500px;
+  height: 500px;
+}
+
+.ghost:hover{
+  font-size: 2em;
 }
 
 #contact {
