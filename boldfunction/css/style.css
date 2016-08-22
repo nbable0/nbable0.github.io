@@ -11,7 +11,7 @@ box model hack
 /*********
 mobile first
 *********/
-@media (min-width:320px){
+/*@media (max-width:400px){
 
 #work {
   margin-left: 4%;
@@ -107,10 +107,7 @@ mobile first
   position: relative;
   font-size: 2em;
 }
-
-
-
-}
+} */
 
 html {
   font-size: 18px;
@@ -131,6 +128,10 @@ header {
   font-size: 1.5em;
 }
 
+h1 {
+  margin-left: 3%;
+}
+
 h2 {
   margin-left: 3%;
   font-size: 1em;
@@ -146,6 +147,22 @@ h4 {
   margin-left: 8%;
   font-size: 1em;
 }
+
+/*drop down for projects*/
+/*drop down for index*/
+.dropbtn-w{
+  border: none;
+  background: transparent;
+  background-image: url('../images/menu-w.png');
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  background-size: 100% 100%;
+  float: right;
+  margin-right: -365px;
+  margin-top: -125px;
+}
+
 
 /*drop down for index*/
 .dropbtn{
@@ -255,7 +272,7 @@ footer {
 
 .info {
 margin-left: 5%;
-font-size: .7em;
+font-size: 1em;
 margin-top: -100px;
 }
 
@@ -371,7 +388,7 @@ margin-top: -100px;
   clear: both;  
   margin-bottom: 100px;
   height: 500px;
-  margin-top:20px;
+  top:100px;
   position: relative;
 }
 
@@ -440,32 +457,7 @@ margin-top: -100px;
   }
 }
 
-/*animate beginning when sized*/
 
-.dropbtn{
-  -webkit-animation: animationFrames ease-in 2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
-}
-
-@-webkit-keyframes animationFrames {
-  0% {
-    opacity:0;
-    -webkit-transform:  translate(-1500px,0px)  ;
-  }
-  60% {
-    opacity:1;
-    -webkit-transform:  translate(30px,0px)  ;
-  }
-  80% {
-    -webkit-transform:  translate(-10px,0px)  ;
-  }
-  100% {
-    opacity:1;
-    -webkit-transform:  translate(0px,0px)  ;
-  }
-}
 
 /*Parsley for form validation*/
 input.parsley-success,
@@ -607,7 +599,7 @@ h3 {
   background: cover;
   width: 450px;
   height: 300px;
-  background-size: 100% 100%;
+  background-size: contain;
   margin: auto;
   float: left;
 }
@@ -676,11 +668,139 @@ h3 {
   clear: both;
 }
 
+/***** style for amy's page******/
+
+.amys-body {
+    color: #FFFFFF;
+    margin: auto;
+    padding: 0;
+    background-color: #ddd;
+    font-family: 'Reem Kufi', sans-serif;
+    background-image: url('../images/amys/50w.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+}
+.amys-intro {
+  background-color: #fcd382;
+  padding: 50px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 105%;
+  background-size: contain;
+}
+
+.amys-intro1 {
+  background-color: #8b0512;
+  padding: 50px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 105%;
+  background-size: contain;
+}
+
+.amys-project h2 {
+  clear: both;
+  margin-left: 3%;
+}
+
+.amys-mock {
+  background-image: url('../images/amys/amys-ill.jpg');
+  background-repeat: no-repeat;
+  background: cover;
+  width: 105%;
+  height: 400px;
+  background-size: contain;
+  margin: auto;
+  float: left;
+  background-color: white;
+}
+
+.amys-desc {
+  margin-top: 5px;
+  padding: 25px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 105%;
+  background-size: contain;
+}
+
+.amys-pack {
+  background-image: url('../images/amys_dis.jpg');
+  background-repeat: no-repeat;
+  width: 110%;
+  height: 450px;
+  background-size: contain;
+  background: cover;
+  margin-left: -5%;
+  float: left;
+}
+
+.amys-back{
+  display: none;
+}
+
+.amys-pack:hover {
+  background-image: url('../images/amys/amys_dis_back.jpg');
+}
+
+.amys-package {
+  background-image: url('../images/amys/full_back.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  background-size: contain;
+  background: cover;
+  margin-left: -5%;
+  float: left;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.amys-package:hover {
+  background-image: url('../images/amys/full_front.jpg');
+}
+
+.amys-mic {
+  background-image: url('../images/amys/mic.jpg');
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 100%;
+  height: 620px;
+  background-size: contain;
+  background: cover;
+  margin-left: -5%;
+  float: left;
+   margin: 0;
+   margin-left: 20px;
+}
+
+.amys-hold {
+  background-image: url('../images/amys/hold.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 280px;
+  background-size: contain;
+  background: cover;
+  float: left;
+  margin-left: 20px;
+}
+
+
 /*********
 tablet
 **/
 @media(min-width:575px){
   /*index*/
+
+/*drop down for index*/
+.dropbtn-w{
+  background-size: 100% 100%;;
+  margin-right: -540px;
+  margin-top: -80px;
+}
 
 /*drop down for index*/
 .dropbtn{
@@ -692,7 +812,7 @@ tablet
   height: 25px;
   background-size: 100% 100%;
   float: right;
-  margin-right: -355px;
+  margin-right: -540px;
   margin-top: -80px;
   
 }
@@ -705,7 +825,7 @@ tablet
 
 #list {
     position: absolute;
-    left: 200px;
+    left: 375px;
     top: -90px;
     background-color: white;
     min-width: 160px;
@@ -863,6 +983,16 @@ font-size: 1.5em;
   margin-bottom: 0;
 }
 
+#services {
+   list-style: none;
+  display: block;
+  float: left;
+  list-style: none;
+  padding: 5px;
+  margin-left: 2%;
+  margin-top: 50px;
+  font-size: 1em;
+}
 
 
 /* contact section*/
@@ -929,7 +1059,7 @@ section input[type=submit] {
     display: block;
     margin-left: 9%;
     width: 600px;
-    background-size: 90% 90%;
+    background-size: contain;
     height: 300px;
 	  padding: 3%;
 }
@@ -953,6 +1083,50 @@ section input[type=submit] {
 .apple-web {
   background-color: transparent;
 }
+
+/***** style for amy's page******/
+
+.amys-intro {
+  background-color: #fcd382;
+  width: 105%;
+  font-size: 2em;
+}
+
+.amys-intro1 {
+  padding: 50px;
+  font-size: 2em;
+}
+
+.amys-mock {
+  width: 105%;
+  height: 550px;
+}
+
+.amys-desc {
+  font-size: 2em;
+  width: 105%;
+}
+
+.amys-pack {
+  width: 110%;
+  height: 620px;
+}
+
+.amys-package {
+  width: 100%;
+  height: 500px;
+}
+
+.amys-mic {
+  width: 110%;
+  height: 900px;
+}
+
+.amys-hold {
+  width: 110%;
+  height: 445px;
+}
+/*end media 575*/
 }
 
 /***** tab ***/
@@ -961,6 +1135,68 @@ section input[type=submit] {
 desktop
 **/
 @media(min-width:860px){
+
+/*drop down for index*/
+.dropbtn-w{
+  background-size: 100% 100%;;
+  margin-right: -800px;
+  margin-top: -110px;
+}
+
+/*drop down for index*/
+.dropbtn{
+  border: none;
+  background: white;
+  background-image: url('../images/menu.png');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 25px;
+  background-size: 100% 100%;
+  float: right;
+  margin-right: -800px;
+  margin-top: -110px;
+  
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+#list {
+    position: absolute;
+    left: 650px;
+    top: -120px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+#list li {
+  list-style: none;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  display: none;
+}
+
+#list li:hover{
+  border: 3px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown:hover #list li {
+  float: right;
+  display:block;
+  padding: 5px;
+}
+/**end index***/
+
   .apple-site {
   width: 350px;
   height: 350px;
@@ -974,7 +1210,7 @@ desktop
   border: 3px solid red;
   padding: 45px;
   position: relative;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .amys {
@@ -990,7 +1226,7 @@ desktop
   border: 3px solid red;
   padding: 78px;
   position: relative;
-  font-size: 2em;
+  font-size: 2.5em;
 }
  
 .book-design {
@@ -1006,7 +1242,7 @@ desktop
   border: 3px solid red;
   padding: 45px;
   position: relative;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .utah-sky {
@@ -1022,7 +1258,7 @@ desktop
   border: 3px solid red;
   padding: 65px;
   position: relative;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 /*for apple page*/
@@ -1055,7 +1291,7 @@ h2 {
 .apple-mock {
     margin-left: 9%;
     width: 100%;
-    background-size: 90% 100%;
+    background-size: contain;
     height: 700px;
 	  padding: 3%;
 }
@@ -1079,6 +1315,57 @@ h2 {
 .apple-logo {
   margin-left: 40%;
 }
+
+
+/***** style for amy's page @860******/
+
+.amys-intro {
+  background-color: #fcd382;
+  width: 105%;
+  font-size: 3em;
+  clear: both;
+}
+
+.amys-intro1 {
+  padding: 50px;
+  font-size: 3em;
+}
+
+.amys-mock {
+  width: 105%;
+  height: 700px;
+  padding: 10%;
+}
+
+.amys-desc {
+  font-size: 3em;
+  width: 105%;
+}
+
+.amys-pack {
+  width: 110%;
+  height: 700px;
+  margin-left: 10%;
+}
+
+.amys-package {
+  width: 100%;
+  height: 750px;
+  margin-left: 2%;
+}
+
+.amys-mic {
+  width: 110%;
+  height: 700px;
+}
+
+.amys-hold {
+  width: 100%;
+  height: 700px;
+  margin-left: 3%;;
+ 
+}
+
 
 /*animation for main sections*/
 #list li:hover{
@@ -1131,4 +1418,90 @@ h2 {
     -webkit-transform:  rotate(0deg) ;
   }
 }
+
+#contact {
+  padding: 100px;
+}
+
+
+}
+/**for wide**/
+@media(min-width:1200px){
+
+/*drop down for index*/
+.dropbtn-w{
+  background-size: 100% 100%;;
+  margin-right: -1150px;
+  margin-top: -110px;
+}
+
+/*drop down for index*/
+.dropbtn{
+  margin-right: -1150px;
+  margin-top: -110px;
+  
+}
+
+#list {
+    left: 1000px;
+}
+/**end index***/
+
+  .apple-site {
+  width: 500px;
+  height: 500px;
+  background-size: 100% 100%;
+}
+
+.apple-site:hover {
+  font-size: 4em;
+}
+
+.amys {
+  width: 500px;
+  height: 500px;
+  background-size: 100% 100%;
+}
+
+.amys:hover {
+  font-size: 4em;
+}
+ 
+.book-design {
+  width: 500px;
+  height: 500px;
+  background-size: 100% 100%;
+}
+
+.book-design:hover {
+  font-size: 4em;
+}
+
+.utah-sky {
+  width: 500px;
+  height: 500px;
+  background-size: 100% 100%;
+}
+
+.utah-sky:hover {
+  font-size: 4em;
+}
+
+#contact {
+  padding: 140px;
+  font-size: 1.4em;
+}
+/**amys page at 1200***/
+/*.amys-back {
+  display: block;
+  background-image: url('../images/amys/amys_dis_back.jpg');
+  background-repeat: no-repeat;
+  width: 115%;
+  height: 525px;
+  background-size: contain;
+  background: cover;
+  clear: both;
+  float: left;
+}*/
+
 }
