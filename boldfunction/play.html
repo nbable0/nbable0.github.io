@@ -1,0 +1,130 @@
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>portfolio page</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  
+
+</head>
+<body>
+    
+        <title>play!</title>
+<br>
+
+    <h1 class='tilt title'> paint me a picture</h1>
+    <div>(hold down the arrow)</div>
+
+    
+        <div id="coords" style="display:none;">
+            <div id="msg" style="display: none;">Start drawing!</div>
+            X: <span id="x">676</span>
+            Y: <span id="y">111</span>
+        </div>
+        <div id="container">
+            <canvas id="surface" width="864" height="710"></canvas>
+        </div>
+    
+
+
+
+<script type="text/javascript">//<![CDATA[ 
+
+var surface, ctx, target, inProgress, cp1x, cp1y, cp2x, cp2y, skip1, skip2;
+
+function $(e) {
+    return document.getElementById(e);
+}
+
+function draw(e) {
+    var x = e.offsetX,
+        y = e.offsetY;
+    target.x.innerHTML = x;
+    target.y.innerHTML = y;
+    //ctx.globalCompositeOperation = 'source-over';
+    ctx.shadowColor = "rgba(0,0,0,.5)";
+    ctx.shadowBlur = 1;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = 20;
+    ctx.strokeStyle = 'blue';
+    if (!inProgress) {
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        inProgress = true;
+        skip1 = true;
+        skip2 = false;
+    } else {
+        if (skip1) {
+            cp1x = x;
+            cp1y = y;
+            skip1 = false;
+            skip2 = true;
+        }
+        if (skip2) {
+            cp2x = x;
+            cp2y = y;
+            skip1 = false;
+            skip2 = false;
+        } else {
+            //ctx.lineTo(x,y);
+            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);
+            //ctx.quadraticCurveTo(cp1x, cp1y, x, y);
+            skip1 = true;
+            skip2 = false;
+        }
+    }
+    ctx.stroke();
+}
+
+function captureTouch() {
+    surface.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+        return false;
+    }, false);
+    surface.addEventListener('dragstart', function(e) {
+        e.preventDefault();
+        return false;
+    }, false);
+    surface.addEventListener('mousedown', function() {
+        $('msg').style.setProperty('display','none');
+        surface.addEventListener('mousemove', draw, false);
+    }, false);
+    surface.addEventListener('mouseup', function() {
+        surface.removeEventListener('mousemove', draw, false);
+        inProgress = false;
+        ctx.save();
+    }, false);
+}
+
+function init() {
+    surface = $('surface');
+    surface.width = document.body.clientWidth;
+    surface.height = window.innerHeight;
+    ctx = surface.getContext('2d');
+    target = {
+        x: $('x'),
+        y: $('y')
+    };
+    captureTouch();
+    document.body.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, false);
+}
+
+document.addEventListener('DOMContentLoaded', init, false);
+//]]>  
+
+</script>
+
+<div> take a screen shot and send it!</div>
+
+
+
+    </body>
+
+</html>

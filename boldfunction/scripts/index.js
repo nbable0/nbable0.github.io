@@ -31,11 +31,3 @@ function showContact(event){
         $('#fade-contact').fadeOut(1000);
     }
 }
-
-
-/*for apple page*/
-$(document).ready(function(){
-    $('.box-shadow-menu').on('mouseover',function(){
-        $('.wrapper #list_a li').toggle(1000);
-    });
-})
