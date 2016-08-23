@@ -169,6 +169,11 @@ h4 {
   font-size: 1em;
 }
 
+ul {
+  list-style: none;
+  font-size: 20px;
+}
+
 .title {
   letter-spacing: -2px;
       -ms-transform: rotate(-7deg); /* IE 9 */
