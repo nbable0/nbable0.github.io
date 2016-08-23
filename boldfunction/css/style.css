@@ -244,11 +244,10 @@ ul li a {
    color: royalblue;
 }
 
-/*img {
+.smiley {
   width: 1.25em;
   margin-bottom: -5px;
-
-}*/
+}
 
 section {
   margin-left: 3%;
@@ -757,7 +756,7 @@ h3 {
   padding: 50px;
   font-size: 1.5em;
   text-align: center;
-  width: 110%;
+  width: 100%;
   background-size: contain;
 }
 
@@ -766,7 +765,7 @@ h3 {
   padding: 50px;
   font-size: 1.5em;
   text-align: center;
-  width: 110%;
+  width: 100%;
   background-size: contain;
 }
 
@@ -779,7 +778,7 @@ h3 {
   background-image: url('../images/amys/amys-ill.jpg');
   background-repeat: no-repeat;
   background: cover;
-  width: 110%;
+  width: 100%;
   height: 400px;
   background-size: contain;
   margin: auto;
@@ -792,14 +791,14 @@ h3 {
   padding: 25px;
   font-size: 1.5em;
   text-align: center;
-  width: 110%;
+  width: 100%;
   background-size: contain;
 }
 
 .amys-pack {
   background-image: url('../images/amys_dis.jpg');
   background-repeat: no-repeat;
-  width: 110%;
+  width: 100%;
   height: 450px;
   background-size: contain;
   background: cover;;
@@ -829,7 +828,7 @@ h3 {
   background-image: url('../images/amys/mic.jpg');
   background-repeat: no-repeat;
   background-color: white;
-  width: 110%;
+  width: 100%;
   height: 620px;
   background-size: contain;
   background: cover;
@@ -841,7 +840,7 @@ h3 {
 .amys-hold {
   background-image: url('../images/amys/hold.jpg');
   background-repeat: no-repeat;
-  width: 110%;
+  width: 100%;
   height: 294px;
   background-size: contain;
   background-color: white;
@@ -855,7 +854,7 @@ h3 {
   background-image: url('../images/amys/amys-ill.jpg');
   background-repeat: no-repeat;
   background: cover;
-  width: 110%;
+  width: 100%;
   height: 400px;
   background-size: contain;
   margin: auto;
@@ -890,7 +889,10 @@ h3 {
 
 }
 
+/***mobile attempt****/
+@media(max-width:399px){
 
+}
 
 /*********
 tablet
@@ -1456,13 +1458,11 @@ h2 {
 /***** style for amy's page @860******/
 
 .amys-intro {
-  background-color: #fcd382;
-  font-size: 3em;
 }
 
 .amys-intro1 {
   padding: 50px;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .amys-mock {
@@ -1472,7 +1472,7 @@ h2 {
 
 .amys-desc {
   font-size: 3.5em;
-  width: 105%;
+  width: 100%;
 }
 
 .amys-pack {
@@ -1483,7 +1483,7 @@ h2 {
 }
 
 .amys-pack:hover {
-  background-image: url('../images/amys/amys_back.jpg');
+
 }
 
 .amys-package {
@@ -1562,14 +1562,10 @@ h2 {
 /**amys page at 1000***/
 
 .amys-intro {
-  background-color: #fcd382;
-  font-size: 3em;
-  clear: both;
 }
 
 .amys-intro1 {
   padding: 50px;
-  font-size: 3em;
 }
 
 .amys-mock {
@@ -1588,9 +1584,9 @@ h2 {
   float: left;
 }
 
-.amys-pack:hover {
+/*.amys-pack:hover {
   background-image: url('../images/amys/amys_back.jpg');
-}
+}*/
 
 .amys-package {
   height: 830px;
@@ -1623,7 +1619,6 @@ h2 {
 .dropbtn{
   margin-right: -1150px;
   margin-top: -110px;
-  
 }
 
 #list {
@@ -1699,10 +1694,13 @@ h2 {
 /**amys page at 1200***/
 
 .amys-intro {
-  background-color: #fcd382;
-  width: 105%;
-  font-size: 3em;
-  clear: both;
+     font-size: 4em;
+    width: 51.25%;
+    position: absolute;
+    left: 700px;
+    margin: auto;
+    height: 700px;
+    text-align: left;
 }
 
 .amys-intro1 {
@@ -1711,17 +1709,17 @@ h2 {
 }
 
 .amys-mock {
-  width: 105%;
+  width: 100%;
   height: 700px;
   padding: 10%;
 }
 
 .amys-desc {
   font-size: 3.5em;
-  width: 105%;
+  width: 100%;
 }
 
-.amys-pack {
+/*.amys-pack {
   background-image: url('../images/amys/amys_front.jpg');
   background-repeat: no-repeat;
   width: 110%;
@@ -1733,7 +1731,7 @@ h2 {
 
 .amys-pack:hover {
   background-image: url('../images/amys/amys_back.jpg');
-}
+}*/
 
 .amys-package {
   height: 830px;
@@ -1745,11 +1743,22 @@ h2 {
 }
 
 .amys-hold {
-     width: 100%;
+     width: 68.25%;
     height: 675px;
     margin-left: 457px;
     position: absolute;
 }
 
 
+}
+@media(min-width:1200px){
+/*drop down for index*/
+.dropbtn-w{
+  margin-right: -1418px;
+}
+
+#list {
+    left: 1204px;
+}
+}
 }
