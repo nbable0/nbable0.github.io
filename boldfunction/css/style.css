@@ -1641,7 +1641,7 @@ h2 {
 
 .amys-intro {
      font-size: 4em;
-    width: 48.6%;
+    width: 54.25%;
     position: absolute;
     left: 700px;
     margin: auto;
@@ -1674,13 +1674,13 @@ h2 {
 
 .amys-mic {
   width: 38%;
-  height: 620px;
+  height: 718px;
 }
 
 .amys-hold {
-     width: 65.75%;
-    height: 620px;
-    margin-left: 457px;
+     width: 67.4%;
+    height: 718px;
+    margin-left: 490px;
     position: absolute;
 }
 /*book page*/
