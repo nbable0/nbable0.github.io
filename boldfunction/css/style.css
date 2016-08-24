@@ -1641,23 +1641,21 @@ h2 {
 
 .amys-intro {
      font-size: 4em;
-    width: 54.25%;
+    width: 51.25%;
     position: absolute;
     left: 700px;
     margin: auto;
     height: 700px;
     text-align: left;
-    z-index: -1;
 }
 
 .amys-intro1 {
   padding: 50px;
   font-size: 3.5em;
-  width: 98%
 }
 
 .amys-mock {
-  width: 98%;
+  width: 100%;
   height: 700px;
   padding: 10%;
 }
@@ -1669,18 +1667,17 @@ h2 {
 
 .amys-package {
   height: 830px;
-  width: 98%;
 }
 
 .amys-mic {
   width: 38%;
-  height: 718px;
+  height: 675px;
 }
 
 .amys-hold {
-     width: 67.4%;
-    height: 718px;
-    margin-left: 490px;
+     width: 68.25%;
+    height: 675px;
+    margin-left: 457px;
     position: absolute;
 }
 /*book page*/
