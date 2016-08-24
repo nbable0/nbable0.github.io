@@ -1641,7 +1641,7 @@ h2 {
 
 .amys-intro {
      font-size: 4em;
-    width: 56.25%;
+    width: 51.25%;
     position: absolute;
     left: 700px;
     margin: auto;
@@ -1653,11 +1653,11 @@ h2 {
 .amys-intro1 {
   padding: 50px;
   font-size: 3.5em;
-  width: 99.75%
+  width: 98%
 }
 
 .amys-mock {
-  width: 100%;
+  width: 98%;
   height: 700px;
   padding: 10%;
 }
@@ -1669,16 +1669,17 @@ h2 {
 
 .amys-package {
   height: 830px;
+  width: 98%;
 }
 
 .amys-mic {
   width: 38%;
-  height: 675px;
+  height: 670px;
 }
 
 .amys-hold {
-     width: 68.25%;
-    height: 760px;
+     width: 67.4%;
+    height: 670px;
     margin-left: 457px;
     position: absolute;
 }
