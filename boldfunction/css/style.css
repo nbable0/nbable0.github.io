@@ -1647,6 +1647,7 @@ h2 {
     margin: auto;
     height: 700px;
     text-align: left;
+    z-index: -1;
 }
 
 .amys-intro1 {
