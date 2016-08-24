@@ -159,82 +159,7 @@ ul {
   }
 }
 
-/*drop down for projects*/
-/*drop down for index*/
-/*IMPORTANT
-.dropbtn-w{
-  border: none;
-  background: transparent;
-  background-image: url('../images/menu-w.png');
-  background-repeat: no-repeat;
-  width: 75px;
-  height: 75px;
-  background-size: 100% 100%;
-  float: right;
-  margin-right: -365px;
-  margin-top: -125px;
-}
-
-.dropbtn{
-  border: none;
-  background: white;
-  background-image: url('../images/menu.png');
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 25px;
-  background-size: 100% 100%;
-  float: right;
-  margin-right: -355px;
-  margin-top: -80px;
-  
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-right: 3%;
-}
-
-#list {
-    position: absolute;
-    left: 200px;
-    top: -90px;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-#list li {
-  list-style: none;
-  float: left;
-  margin-right: 30px;
-  position: relative;
-  display: none;
-}
-
-#list li:hover{
-  border: 3px solid red;
-  border-radius: 5px;
-  padding: 5px;
-  width: 100%;
-  text-align: center;
-}
-
-.dropdown:hover #list li {
-  float: right;
-  display:block;
-  padding: 5px;
-}
-
-ul li a {
-   text-decoration: none;
-   color: royalblue;
-}
-*/
-
-/*drop down for index*/
+/*drop down*/
 .dropbtn{
     border: none;
     background: white;
@@ -285,10 +210,6 @@ ul li a {
   display: none;
 }
 
-#list:hover {
-  
-}
-
 #list li:hover{
   border: 3px solid red;
   border-radius: 5px;
@@ -305,6 +226,8 @@ ul li a {
    text-decoration: none;
    color: royalblue;
 }
+
+/*end drop down*/
 
 .smiley {
   width: 1.25em;
@@ -803,16 +726,6 @@ h3 {
   margin-left: 3%;
 }
 
-/*.apple-mock {
-  background-image: url('../images/apple_photo.jpg');
-  background-repeat: no-repeat;
-  background: cover;
-  width: 100%;
-  height: 300px;
-  background-size: contain;
-  margin: auto;
-  float: left;
-}*/
 .apple-mock {
   width: 100%;
   height: auto;
@@ -1091,93 +1004,6 @@ tablet
 #list {
   width: 200px;
 }
-/*drop down for index*/
-/*IMPORTANT PUT OUT
-.dropbtn-w{
-  background-size: 100% 100%;;
-  margin-right: -540px;
-}
-
-
-.dropbtn{
-  border: none;
-  background: white;
-  background-image: url('../images/menu.png');
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 25px;
-  background-size: 100% 100%;
-  float: right;
-  margin-right: -540px;
-  margin-top: -80px;
-  
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-right: 3%;
-}
-
-#list {
-    position: absolute;
-    left: 375px;
-    top: -90px;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    border-radius: 5px;
-}
-
-#list li {
-  list-style: none;
-  float: left;
-  margin-right: 30px;
-  position: relative;
-  display: none;
-}
-
-#list li:hover{
-  border: 3px solid red;
-  border-radius: 5px;
-  padding: 5px;
-  width: 100%;
-  text-align: center;
-}
-
-.dropdown:hover #list li {
-  float: right;
-  display:block;
-  padding: 5px;
-}
-
-
-/*
-#list {
-  background: transparent;
-  box-shadow: none;
-  position: relative;
-  font-size: 1em;
-  margin-right: 250px
-}
-
-#list li {
-  margin-right: 100px;
-  display: inline-block;
-  padding: 5px;
-  font-size: .8em;
-}
-
-#list li:hover{
-  width: 10%;
-  border:none;
-  padding: 0;
-}
-
-.dropbtn {
-  display: none;
-}
-*/
 
 .apple-site {
   background-image: url('../images/apple_dis.jpg');
@@ -1369,18 +1195,6 @@ section input[type=submit] {
   
 }
 
-/*.apple-mock {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-    display: block;
-    margin-left: 9%;
-    width: 600px;
-    background-size: contain;
-    height: 300px;
-	  padding: 3%;
-}*/
-
 .mobile-back {
   background-color: transparent;
 }
@@ -1438,8 +1252,6 @@ section input[type=submit] {
 /*end media 575*/
 }
 
-/***** tab ***/
-
 /*********
 desktop
 **/
@@ -1452,67 +1264,6 @@ desktop
 .title {
   letter-spacing: -3px;
 }
-
-/*drop down for index*/
-/*important
-.dropbtn-w{
-  background-size: 100% 100%;;
-  margin-right: -800px;
-}
-
-
-.dropbtn{
-  border: none;
-  background: white;
-  background-image: url('../images/menu.png');
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 25px;
-  background-size: 100% 100%;
-  float: right;
-  margin-right: -800px;
-  margin-top: -110px;
-  
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-right: 3%;
-}
-
-#list {
-    position: absolute;
-    left: 650px;
-    top: -120px;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    border-radius: 5px;
-}
-
-#list li {
-  list-style: none;
-  float: left;
-  margin-right: 30px;
-  position: relative;
-  display: none;
-}
-
-#list li:hover{
-  border: 3px solid red;
-  border-radius: 5px;
-  padding: 5px;
-  width: 100%;
-  text-align: center;
-}
-
-.dropdown:hover #list li {
-  float: right;
-  display:block;
-  padding: 5px;
-}
-/**end index***/
 
   .apple-site {
   width: 350px;
@@ -1785,10 +1536,6 @@ h2 {
   float: left;
 }
 
-/*.amys-pack:hover {
-  background-image: url('../images/amys/amys_back.jpg');
-}*/
-
 .amys-package {
   height: 830px;
 }
@@ -1824,23 +1571,6 @@ h2 {
 #services {
   font-size: 2em;
 }
-
-/*drop down for index*/
-/* IMPORTANT PUT OUT
-.dropbtn-w{
-  background-size: 100% 100%;;
-  margin-right: -1150px;
-}
-
-.dropbtn{
-  margin-right: -1150px;
-  margin-top: -110px;
-}
-
-#list {
-    left: 1000px;
-}
-/**end index***/
 
   .apple-site {
   width: 500px;
@@ -1935,20 +1665,6 @@ h2 {
   width: 100%;
 }
 
-/*.amys-pack {
-  background-image: url('../images/amys/amys_front.jpg');
-  background-repeat: no-repeat;
-  width: 110%;
-  height: 975px;
-  background-size: contain;
-  background: cover;;
-  float: left;
-}
-
-.amys-pack:hover {
-  background-image: url('../images/amys/amys_back.jpg');
-}*/
-
 .amys-package {
   height: 830px;
 }
@@ -1998,7 +1714,7 @@ h2 {
 
 }
 
-/* @media (max-device-width: ){} */
+
 /*********
 mobile first
 *********/
@@ -2085,7 +1801,7 @@ mobile first
 
 /*amys page*/
   .amys-pack {
-    height: 1000px;
+    height: 979px;
   }
 
 /*book page*/
