@@ -1650,7 +1650,7 @@ h2 {
 
 .amys-intro {
      font-size: 4em;
-    width: 51.25%;
+    width: 50%;
     position: absolute;
     left: 700px;
     margin: auto;
@@ -1681,12 +1681,12 @@ h2 {
 
 .amys-mic {
   width: 38%;
-  height: 675px;
+  height: 630px;
 }
 
 .amys-hold {
-     width: 68.25%;
-    height: 675px;
+     width: 67.4%;
+    height: 630px;
     margin-left: 457px;
     position: absolute;
 }
@@ -1730,6 +1730,10 @@ h2 {
 mobile first
 *********/
 @media (max-device-width:400px){
+
+.info{
+  font-size: 1.8em;
+}
 
 #work {
   margin-left: 4%;
@@ -1810,10 +1814,40 @@ mobile first
   font-size: 2em;
 }
 
+.resume {
+  height: 1000px;
+  width: 100%;
+}
+
+.resume:hover {
+  width: 500px;
+  height: 500px;
+  font-size: 3em;
+  padding-top: 20px;
+}
+
+.ghost{
+  width: 800px;
+  height: 800px;
+}
+
 /*amys page*/
   .amys-pack {
     height: 979px;
   }
+
+  .amys-intro {
+  padding: 50px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  background-size: contain;
+  clear: both;
+  position: relative;
+  left: 0;
+  font-size: 3em;
+  height: 325px;
+}
 
 /*book page*/
 .book-project {
